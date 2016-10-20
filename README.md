@@ -3,4 +3,4 @@
 
 evolve version 3.1
 
-[User Guide](/wiki)
+[User Guide](https://github.com/casewise/layout-groupby/wiki)
