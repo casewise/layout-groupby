@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/casewise/layout-groupby/issues"
   },
-  "homepage": "https://github.com/casewise/layout-groupby#readme"
+  "homepage": "https://github.com/casewise/layout-groupby#readme",
+  "evolve-version": "3.1"
 }
