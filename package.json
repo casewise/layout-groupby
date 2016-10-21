@@ -16,8 +16,5 @@
     "url": "https://github.com/casewise/layout-groupby/issues"
   },
   "homepage": "https://github.com/casewise/layout-groupby#readme",
-  "evolve-version": "3.1",
-  "dependencies": {
-    "colors": "^1.1.2"
-  }
+  "evolve-version": "3.1"
 }
