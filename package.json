@@ -1,6 +1,6 @@
 {
   "name": "groupby",
-  "version": "4.0.14",
+  "version": "4.0.15",
   "description": "",
   "main": "src/cwGroupBy.js",
   "scripts": {
