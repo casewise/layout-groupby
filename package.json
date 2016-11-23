@@ -1,7 +1,7 @@
 {
-  "name": "groupby",
+  "name": "GroupBy",
   "version": "4.0.9",
-  "description": "",
+  "description": "Aims to group a list of item and then display them by property or by alphabet.",
   "main": "src/cwGroupBy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/casewise/layout-groupby.git"
   },
-  "author": "Casewise PSG",
+  "author": "Luting Hong",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/casewise/layout-groupby/issues"
   },
   "homepage": "https://github.com/casewise/layout-groupby#readme",
+  "wiki": "https://github.com/casewise/ReverseList/wiki",
   "evolve-version": "3.1"
 }
