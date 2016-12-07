@@ -1,4 +1,4 @@
 #Help
 
-- [Wiki Help](./wiki)
+- [Wiki Help](/casewise/layout-groupby/wiki)
 
