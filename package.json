@@ -1,6 +1,6 @@
 {
   "name": "GroupBy",
-  "version": "4.3.8",
+  "version": "4.3.9",
   "description": "Aims to group a list of item and then display them by property or by alphabet.",
   "main": "src/cwGroupBy.js",
   "scripts": {
