@@ -135,7 +135,7 @@
     //this.NodeID is used as Accordion selector
     output.push("<ul class='cw-list ", this.nodeID, "'>");
     for (s in sortedItems) {
-      if (sortedItems.hasOwnProperty(s)) {
+      if (sortedItems.hasOwnProperty(s) && sortedItems[s]) {
 
         output.push("<li class='cw-item ", this.nodeID, "'>");
 
