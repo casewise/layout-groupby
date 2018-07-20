@@ -64,21 +64,6 @@
 
   cwGroupBy.prototype.getObjectsByAlphabet = function(all_items) {
 
-    //if the the definition page is in french, sort all the items by name's alphabetical order
-    //var that = this;
-    // all_items.sort(function(a, b) {
-    //   var nameA = a.name.toLowerCase(),
-    //     nameB = b.name.toLowerCase()
-    //   if (nameA < nameB) // sort string ascending
-    //     return -1
-    //   if (nameA > nameB)
-    //     return 1
-    //   return 0 //default return value (no sorting)
-    // });
-
-    // function isInteger(s) {
-    //   return String(s).search(isInteger_re) != -1
-    // }
     var itemList = {};
     for (var i in all_items) {
       if (all_items.hasOwnProperty(i)) {
@@ -121,7 +106,7 @@
         return;
       }
     }
-    
+
     if (this.options.CustomOptions['group-by-alphabel']) {
       sortedItems = this.getObjectsByAlphabet(associationTargetNode);
     } else {
@@ -135,8 +120,10 @@
     //this.NodeID is used as Accordion selector
     output.push("<ul class='cw-list ", this.nodeID, "'>");
     for (s in sortedItems) {
-      if (sortedItems.hasOwnProperty(s) && sortedItems[s]) {
-
+      if (sortedItems.hasOwnProperty(s)) {
+        if (cwApi.isUndefined(sortedItems[s])) {
+          continue;
+        }
         output.push("<li class='cw-item ", this.nodeID, "'>");
 
         output.push('<div class="cw-list-subtitle ', this.nodeID, '" data-sort="', s, '"><a></a>', s, '</div>');
@@ -175,7 +162,7 @@
     undefinedText = $.i18n.prop('global_undefined');
     //sortedGroupData.renameProperty(undefinedValue, undefinedText);
     cwApi.replacePropertyKey(sortedGroupData, undefinedValue, undefinedText);
-        
+
     return sortedGroupData;
   };
 
